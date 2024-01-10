@@ -211,18 +211,6 @@ INSERT INTO `tb_thajaran` (`id_thajaran`, `tahun_ajaran`, `status`) VALUES
 -- Table structure for table `_logabsensi`
 --
 
-CREATE TABLE `_logabsensi` (
-  `id_presensi` int(11) NOT NULL,
-  `id_mengajar` int(11) NOT NULL,
-  `id_siswa` int(11) NOT NULL,
-  `tgl_absen` date NOT NULL,
-  `ket` enum('H','I','S','T','A','C') NOT NULL,
-  `pertemuan_ke` varchar(30) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `_logabsensi`
---
 
 INSERT INTO `_logabsensi` (`id_presensi`, `id_mengajar`, `id_siswa`, `tgl_absen`, `ket`, `pertemuan_ke`) VALUES
 (1, 2, 1, '2021-03-02', '', '1'),
@@ -294,12 +282,6 @@ ALTER TABLE `tb_thajaran`
   ADD PRIMARY KEY (`id_thajaran`);
 
 --
--- Indexes for table `_logabsensi`
---
-ALTER TABLE `_logabsensi`
-  ADD PRIMARY KEY (`id_presensi`);
-
---
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -350,12 +332,6 @@ ALTER TABLE `tb_siswa`
 --
 ALTER TABLE `tb_thajaran`
   MODIFY `id_thajaran` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
-
---
--- AUTO_INCREMENT for table `_logabsensi`
---
-ALTER TABLE `_logabsensi`
-  MODIFY `id_presensi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
