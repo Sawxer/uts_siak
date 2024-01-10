@@ -1,7 +1,7 @@
 # WEB UTS SIAK
 - Muhammad Arby Tyas Januar Hikmat : 4521210044
-- Panca Purnama : 4521210065
-- Sultan Rafi : 4521210040
+- Panca Purnama : 4521210040
+- Sultan Rafi : 4521210065
 # Penjelasan
 WEB UTS SIAK merupakan web yang berfungsi untuk mengatur mahasiswa dan dosen di dunia perkuliahan
 # Fitur
